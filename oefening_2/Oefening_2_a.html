@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Oefening 2 a</title>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="top">Koppelingen maken</h1>
+            <p>
+                Een belangrijke <b>referentie</b> voor de cursus web development is de website <a href="https://validator.w3.org" target="_blank">w3schools.com</a>
+                <br>
+                Elke HTML pagina die je maakt, controleer je best via de <a href="https://validator.w3.org/#validate_by_input" target="_blank">validator</a> op de <i>syntax fouten</i>. De link verwijst meteen naar de optie van de directe invoer. 
+                <br> 
+                Op de tweede pagina zie je wat foto's over <a href="#hobby">mijn hobby</a>.
+                <br>
+                Wie lust er geen <a href="#lekkernijen">chocoladecakejes</a>. Een browser kan ook (jpg, gif, png) afbeeldingen, tonen op een nieuwe tabblad. 
+                <br> 
+                Lager op deze pagina vind nog wat foto's van <a href="#lekkernijen">lekkernijen</a>. 
+            </p>
+            <hr>
+        </header>
+
+        <main>
+            <h1 id="afbeeldingen">Afbeeldingen toepassen</h1>
+            <h2>Foto van een waterlelie</h2>
+
+            <figure>
+                <a href="images/Waterlelies800x600.jpg" target="_blank">
+                    <img title="Dit is een foto van waterlelies" 
+                    src="images/Waterlelies320x240.jpg"
+                    alt="Dit is een foto van waterlelies">
+                </a>
+                <figcaption>
+                    We tonen een afbeelding in lagere resolutie (bandbreedtebesparend en passend in de layout). Klik op de foto om de versie met volledige resolutie te openen in een nieuw venster. 
+                </figcaption>
+            </figure>
+
+            <h2 id="hobby">Foto van mijn hobby</h2>
+
+            <figure>
+                <a href="Oefening_2_b.html#start">
+                    <img src="images/hobby/karakter2.png"alt="hier komt een foto van mijn hobby">
+                </a>
+                <figcaption>
+                    Ik geef hier al een voorsmaakje van mijn hobby. Deze foto vind je ook terug lager op de tweede pagina. 
+                </figcaption>
+            </figure>
+
+            <a href="#top">Ga terug naar het begin van deze pagina</a>
+
+            <h2 id="lekkernijen">Foto's van enkele lekkernijen</h2>
+            <img src="images/lemon-posset.jpg" alt="figuur1">
+            <img src="images/roasted-brussel-sprouts.jpg" alt="figuur2">
+            <img src="images/zucchini-cake.jpg" alt="figuur3">
+
+            <p>Door 3 figuren na elkaar te gebruiken, net zoals koppelingen, &lt;inline elementen&gt; zijn. Er wordt geen witregel voor of na het element voorzien.</p>
+
+            <h2 id="combineren">Foto's en tekst combineren</h2>
+            <img src="images/bird.gif" alt="vogel">
+            <p>We plaatsen eerst een figuur<br>voor een paragraaf.</p>
+            <p><img src="images/bird.gif" alt="vogel">We zien<br>een verschil wanneer we een figuur<br>in het begin binnen een paragraaf plaatsen.</p>
+            <p>En hier zien we hoe een<br>figuur<img src="images/bird.gif" alt="vogel">binnen<br>een paragraaf eruit ziet.</p>
+
+            <a href="#top">Ga terug naar het begin van deze pagina</a>
+
+            <hr>
+            
+            <h1>Inhoud van deze pagina</h1>
+
+            <p>
+                Ga terug naar <a href="#top">koppelingen</a>
+                <br>
+                Ga terug naar <a href="#afbeeldingen">afbeeldingen</a>
+                <br>
+                Ga terug naar <a href="#hobby">Foto van hobby</a>
+                <br>
+                Ga terug naar <a href="#lekkernijen">Foto's van lekkernijen</a>
+                <br>
+                Ga terug naar <a href="#combineren">Foto's en tekst combineren</a>
+                <br><br>
+                Indien er vragen zijn kun je altijd mailen naar <a href="mailto:mathias.malecki@student.ucll.be?&subject=Onderwerp&body=Inhoud">
+                    Mathias Malecki
+                </a>
+            </p>
+        </main>
+    </body>
+</html>
