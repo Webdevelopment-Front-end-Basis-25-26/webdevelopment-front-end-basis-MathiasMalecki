@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    font-family: 'trebuchet ms', geneva, sans-serif;
+    font-size: 36pt;
+    color: #3598db;
+}
+
+#intro {
+    text-decoration: underline;
+    font-family: tahoma, arial, helvetica, sans-serif;
+    font-size: 14pt;
+    color: #000000;
+}
+
+.mark {
+    background-color: #fbeeb8;
+}
+
+#info {
+    border-width: 3px;
+    border-style: solid;
+    border-color: #3598db;
+    background-color: #add8e6;
+    width: 99.9712%;
+    font-family: 'book antiqua', palatino, serif;
+    font-size: 14pt;
+    padding: 6px;
+    box-sizing: border-box;
+}
