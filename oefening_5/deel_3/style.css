@@ -5,14 +5,14 @@ h1 {
     color: #3598db;
 }
 
-#intro {
+#intro { /*  #id gebruik je voor één uniek element op de pagina */
     text-decoration: underline;
     font-family: tahoma, arial, helvetica, sans-serif;
     font-size: 14pt;
     color: #000000;
 }
 
-.mark {
+.mark { /* .class gebruik je voor meerdere elementen */
     background-color: #fbeeb8;
 }
 
