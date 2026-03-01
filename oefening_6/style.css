@@ -1,0 +1,64 @@
+body{
+    background-color: #73FBFD;
+    color: #EA3680;
+    font-family: serif;
+    /* p {background-image: url("images/backdrop.gif");} */
+    /* bovenstaande regel geeft alle paragrafen een background image */
+    background-image: url("images/backdrop.gif");
+    background-position: center;
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+}
+
+div{
+    font-style: italic;
+}
+
+h1, h2, a{
+    font-family: sans-serif;
+    text-align: center;
+    
+    text-decoration: none;
+    /* verwijderen van onderlijningen van links */
+}
+
+h1 a{ /* geen komma betekent als ze in elkaar staan */
+    color: yellow;
+}
+
+h1{
+    font-size: 200%; 
+    text-shadow: 2px 2px 4px black;
+    background-color: blue;
+}
+
+h2{
+    font-size: 150%;
+}
+
+ul{
+    list-style-image: url("images/sqpurple.gif");
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+#beneden{
+    color: blue;
+    background-color: hsla(0, 100%, 50%, 0.2);
+}
+
+#vet{
+    font-weight: bold;
+}
+
+#hoofdletters{
+    text-transform: uppercase;
+}
+
+.inspringen{
+    text-indent: 20px;
+}
+
+p.inspringen{
+    text-transform: uppercase;
+}
