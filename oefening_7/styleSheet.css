@@ -1,0 +1,187 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #d6c5ef;
+}
+
+/* alle titels */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.25em; /* em = px / 16
+                          px = em * 16 */
+}
+
+header h2 {
+    text-align: center;
+}
+
+/* titel in de header */
+header h2 a{
+    font-size: 1.75em;
+    color: black;
+    text-decoration: none;
+}
+
+/* 1. Alle bezochte links: blauw */
+a:visited {
+    color: blue;
+}
+
+/* 2. Navigatielinks: basisstijl */
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 6px 10px 6px 28px;
+    display: inline-block;
+    background-image: url("images/link.png");
+    background-repeat: no-repeat;
+    background-position: 6px center;
+}
+
+/* 3. Hover */
+nav a:hover {
+    background-color: #555;
+}
+
+/* 4. Active (klik) */
+nav a:active {
+    color: yellow;
+}
+
+/* 5. Eerste link vet */
+nav a:first-child {
+    font-weight: bold;
+}
+
+/* 6. Volgende links schuin */
+nav a + a {
+    font-style: italic;
+}
+
+/* 7. Bezochte navigatielinks: zelfde kleur als normaal */
+nav a:visited {
+    color: white;
+}
+
+/* paragrafen die rechtstreeks in de body zitten */
+/* > betekent een direct kind, dus exact één niveau dieper */
+body > p{
+    font-size: 1em;
+}
+
+body > p::first-letter{
+    font-weight: bold;
+    font-size: 1.75em;
+}
+
+/* Selecteer de eerste letter van een p die na een h2 komt op hetzelfde niveau */
+h2 ~ p::first-letter {
+    font-size: 1.75em;
+    font-weight: bold; /* Optioneel: maakt het effect vaak mooier */
+}
+
+/* eerste regel van een paragraaf na een h2 laten inspringen + schuin */
+h2 + p {
+    text-indent: 2em;
+}
+h2 + p::first-line{
+    font-style: italic;
+}
+/* :: gebruik je om een deel van een element aan te spreken bv. eerste letter */
+/* : gebruik je als je een heel element wilt aanspreken bv. een volledige paragraaf */
+/* het plusteken bv. h2 + p selecteerd de eerste <p> die direct na een <h2> komt */
+
+/* 1. Hoofdlijst items: Groen + Afbeelding */
+ul > li {
+    color: green;
+    list-style-image: url("images/clipboard.png");
+}
+
+/* 2. Hoofdlijst item na een ander hoofdlijst item: Rood */
+/* (Dit maakt het tweede hoofditem rood) */
+ul > li + li {
+    color: red;
+}
+
+/* 1. De standaard stijl voor de sublijst (Vierkantje) */
+ul ul li {
+    color: blue;
+    list-style-image: none;
+    list-style-type: square;
+}
+
+/* 2. De hover: we maken de selector specifiekER */
+/* We zeggen: als je over de LI van de hoofdlijst hovert, 
+   moeten de LI's in de onderliggende UL een cirkel worden. */
+ul > li:hover ul > li {
+    list-style-type: circle;
+}
+
+/* 3. Uitzondering voor het eerste item (Bolletje) */
+/* Dit moet onder de hover staan, anders wordt het eerste bolletje ook een cirkel! */
+ul ul li:first-child {
+    list-style-type: disc;
+}
+
+/* 1. Lettertype en grootte gelijkstellen aan de rest */
+input {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* 2. Naam invoerveld styling */
+input[name="naam"] {
+    background-color: #FF1111;
+}
+
+input[name="naam"]:hover {
+    background-color: #991111;
+}
+
+/* 3. Voornaam invoerveld styling */
+input[name="voornaam"] {
+    background-color: #1111FF;
+}
+
+input[name="voornaam"]:hover {
+    background-color: #111199;
+}
+
+/* 4. Focus-state (cursor erin) voor beide velden */
+/* De :focus selector moet na de :hover staan om de kleur groen te houden bij beweging */
+input[name="naam"]:focus, 
+input[name="voornaam"]:focus {
+    background-color: #11FF11;
+}
+
+/* 5. Radiobutton labels styling */
+/* We gebruiken de 'for' selector of de positie in de HTML */
+
+/* "Ik ben tevreden" */
+label[for="tevreden"] {
+    color: #119911;
+}
+
+/* "Ik ben niet tevreden" */
+label[for="ontevreden"] {
+    color: #991111;
+}
+
+/* 6. Geselecteerde radiobuttons (Donkerder maken) */
+/* De :checked selector in combinatie met de 'adjacent sibling' selector (+) */
+#tevreden:checked + label {
+    color: #116611;
+    font-weight: bold; /* Optioneel: maakt het duidelijker */
+}
+
+#ontevreden:checked + label {
+    color: #661111;
+    font-weight: bold;
+}
+
+footer {
+    font-size: 0.75em;
+    text-align: right;
+}
